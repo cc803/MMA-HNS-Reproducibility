@@ -161,6 +161,18 @@ python train_dhns_rotate.py \
 
 不要为每个方法分别随机生成 mask；即使 rate 和 seed 相同，也应显式加载已经保存的文件，并核对 checksum。
 
+## 主实验协议（Main experimental protocol）
+
+MMA-HNS 主实验在 MKG-W 与 MKG-Y 上统一采用以下配置。主实验的 A+B retrieval weight 保持 `0.25`，请勿在复现主表时将其改为 `1.0`：
+
+| 项目 | 主实验值 |
+|---|---|
+| A+B retrieval weight（`--retrieval-mix-weight`） | `0.25` |
+| HPSAC fallback（`λ`, `α`） | `(0.25, 0.0)` |
+| λ grid（`--lambda-grid`） | `{0.10, 0.20, 0.25, 0.30, 0.40}` |
+
+下面两节分别说明 retrieval 与 HPSAC 的参数语义。权重 `1.0` 仅用于后文「Additional same-scale low-degree analysis」这一独立补充分析，不属于主实验协议。
+
 ## Retrieval 设置
 
 主实验的 A+B retrieval 配置为：
@@ -392,6 +404,27 @@ bash run_revision_low_degree_missing_sweep.sh
 ```bash
 DATASETS=MKG-Y RATES=0.3 SEEDS=0 bash run_revision_low_degree_missing_sweep.sh
 ```
+
+## Additional same-scale low-degree analysis
+
+在主实验协议之外，本仓库单独提供一个同规模的 low-degree 补充分析，用于在主实验 A+B retrieval weight `0.25` 之外对照更高检索权重下的表现：
+
+| 项目 | 该分析取值 |
+|---|---|
+| Dataset | `MKG-Y` |
+| Missingness | `30% low-degree`（`low_degree` 策略，seed 0/1/2） |
+| A+B retrieval weight（`--retrieval-mix-weight`） | `1.0` |
+| HPSAC fallback（`λ`, `α`） | `(1.0, 0.0)` |
+| λ grid（`--lambda-grid`） | `{0.10, 0.20, 0.25, 0.30, 0.40, 0.60, 0.80, 1.00}` |
+
+复现要点：
+
+- 复用已有的 mask：`masks/MKG-Y_low_degree_text30_seed<SEED>.pt`；
+- A+B 训练时显式设置 `--retrieval-mix-weight 1.0`；
+- HPSAC 校准时使用 `--lambda-grid 0.10,0.20,0.25,0.30,0.40,0.60,0.80,1.00`，fallback 为 `λ=1.0, α=0.0`（即 `--fallback-lambda 1.0`）；
+- 其余参数（`--retrieval-source entity_embedding_knn`、`--retrieval-topk 5`、`--retrieval-pool-size 512`、`--safe-delta 0.0002`、`--min-group-queries 30`、`--lock-missing-text`）与主实验保持一致。
+
+该分析仅改变 retrieval weight 与 λ grid 的取值，不影响主实验协议；主 README 其余部分仍以 A+B retrieval weight `0.25`、HPSAC fallback `(0.25, 0.0)` 为准。
 
 ## 结果与复现检查
 
