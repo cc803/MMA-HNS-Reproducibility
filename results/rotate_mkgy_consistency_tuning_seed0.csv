@@ -1,0 +1,7 @@
+setting,inject_text_missing_rate,split,MRR,MR,Hit@10,Hit@3,Hit@1
+Weaker Consistency,0.0,Overall,0.368047,1540.576416,0.447428,0.398798,0.317499
+Weaker Consistency,0.0,Head/Tail Missing Text,0.328407,1659.489142,0.403309,0.359359,0.281282
+Weaker Consistency,0.0,Head/Tail Both Have Text,0.390649,1472.776533,0.472583,0.421285,0.338149
+Stronger Consistency,0.0,Overall,0.370073,1553.746582,0.450244,0.398986,0.321066
+Stronger Consistency,0.0,Head/Tail Missing Text,0.329546,1684.589969,0.404343,0.360910,0.283351
+Stronger Consistency,0.0,Head/Tail Both Have Text,0.393181,1479.144163,0.476415,0.420696,0.342571

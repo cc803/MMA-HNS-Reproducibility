@@ -1,0 +1,40 @@
+{
+  "checkpoint_path": "./checkpoint/rotate_retrieval_w025.ckpt",
+  "dataset": "MKG-Y",
+  "model": "AdvMixRotatE",
+  "overall_metrics": {
+    "hit1": 0.3248216509819031,
+    "hit10": 0.45043182373046875,
+    "hit3": 0.4008636772632599,
+    "mr": 1280.5010986328125,
+    "mrr": 0.3727347254753113
+  },
+  "retrieval_mix_weight": 0.25,
+  "retrieval_pool_size": 512,
+  "retrieval_source": "entity_embedding_knn",
+  "retrieval_topk": 5,
+  "seed": 0,
+  "subset_metrics": {
+    "head_and_tail_have_text": {
+      "count": 3392,
+      "count_type": "query",
+      "hit1": 0.3428655660377358,
+      "hit10": 0.47523584905660377,
+      "hit3": 0.42452830188679247,
+      "mr": 1254.2491155660377,
+      "mrr": 0.3939369334613675,
+      "triple_count": 1696
+    },
+    "head_or_tail_missing_text": {
+      "count": 1934,
+      "count_type": "query",
+      "hit1": 0.29317476732161324,
+      "hit10": 0.40692864529472594,
+      "hit3": 0.359358841778697,
+      "mr": 1326.543950361944,
+      "mrr": 0.3355504048632497,
+      "triple_count": 967
+    }
+  },
+  "use_retrieval_missing_text": true
+}

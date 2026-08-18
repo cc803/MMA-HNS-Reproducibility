@@ -1,0 +1,174 @@
+{
+  "dataset": "MKG-Y",
+  "methods": [
+    "DHNS",
+    "MMA-HNS"
+  ],
+  "missing_rates": [
+    0.3
+  ],
+  "missing_text_metric_definition": "head_or_tail_missing_text MRR",
+  "missingness_pattern": "Relation-dependent",
+  "output_files": {
+    "markdown_table": "/home/student04/my_data/DHNS-main/results/relation_dependent/MKG-Y/main_table.md",
+    "result_json": "/home/student04/my_data/DHNS-main/results/relation_dependent/MKG-Y/main_table_result.json",
+    "runs_csv": "/home/student04/my_data/DHNS-main/results/relation_dependent/MKG-Y/main_table_runs.csv",
+    "summary_csv": "/home/student04/my_data/DHNS-main/results/relation_dependent/MKG-Y/main_table_summary.csv"
+  },
+  "relation_dependency_assignment": "dominant incident training relation",
+  "relation_dependency_source": "train2id.txt",
+  "runs": [
+    {
+      "dataset": "MKG-Y",
+      "hit1": 0.32425835728645325,
+      "hit10": 0.4470521807670593,
+      "hit3": 0.40011265873908997,
+      "log_file": "results/relation_dependent/MKG-Y/inject30/dhns_seed0.log",
+      "mask_checksum_sha256": "854adc5586549279ec6d083c8b21c843c0ae3e89cd9c0396aac36c340b1adb23",
+      "method": "DHNS",
+      "missing_rate": 0.3,
+      "missing_text_mrr": 0.3833094249111517,
+      "mrr": 0.37123700976371765,
+      "seed": 0
+    },
+    {
+      "dataset": "MKG-Y",
+      "hit1": 0.3218175172805786,
+      "hit10": 0.4464889168739319,
+      "hit3": 0.3965452313423157,
+      "log_file": "results/relation_dependent/MKG-Y/inject30/dhns_seed1.log",
+      "mask_checksum_sha256": "0e15753bce8fb92bb366ed4448c014bd6e94eb3f1f62b1b170653a2d1ac24715",
+      "method": "DHNS",
+      "missing_rate": 0.3,
+      "missing_text_mrr": 0.39323716776454437,
+      "mrr": 0.3699337840080261,
+      "seed": 1
+    },
+    {
+      "dataset": "MKG-Y",
+      "hit1": 0.322756290435791,
+      "hit10": 0.44667667150497437,
+      "hit3": 0.4004881680011749,
+      "log_file": "results/relation_dependent/MKG-Y/inject30/dhns_seed2.log",
+      "mask_checksum_sha256": "6eedab1979aafa15dcdd343074366a9af92c3be011b766fd0f7589150edc5040",
+      "method": "DHNS",
+      "missing_rate": 0.3,
+      "missing_text_mrr": 0.28085813189768283,
+      "mrr": 0.3713423013687134,
+      "seed": 2
+    },
+    {
+      "dataset": "MKG-Y",
+      "hit1": 0.3291400675929403,
+      "hit10": 0.4524971836274878,
+      "hit3": 0.40199023657529104,
+      "log_file": "results/relation_dependent/MKG-Y/inject30/mma_hns_seed0.log",
+      "mask_checksum_sha256": "854adc5586549279ec6d083c8b21c843c0ae3e89cd9c0396aac36c340b1adb23",
+      "method": "MMA-HNS",
+      "missing_rate": 0.3,
+      "missing_text_mrr": 0.38552333768436275,
+      "mrr": 0.37571175692150227,
+      "seed": 0
+    },
+    {
+      "dataset": "MKG-Y",
+      "hit1": 0.32576042057829513,
+      "hit10": 0.4526849417949681,
+      "hit3": 0.4010514457378896,
+      "log_file": "results/relation_dependent/MKG-Y/inject30/mma_hns_seed1.log",
+      "mask_checksum_sha256": "0e15753bce8fb92bb366ed4448c014bd6e94eb3f1f62b1b170653a2d1ac24715",
+      "method": "MMA-HNS",
+      "missing_rate": 0.3,
+      "missing_text_mrr": 0.3963786153637846,
+      "mrr": 0.3741508701476071,
+      "seed": 1
+    },
+    {
+      "dataset": "MKG-Y",
+      "hit1": 0.3240705970709726,
+      "hit10": 0.4524971836274878,
+      "hit3": 0.40274126924521214,
+      "log_file": "results/relation_dependent/MKG-Y/inject30/mma_hns_seed2.log",
+      "mask_checksum_sha256": "6eedab1979aafa15dcdd343074366a9af92c3be011b766fd0f7589150edc5040",
+      "method": "MMA-HNS",
+      "missing_rate": 0.3,
+      "missing_text_mrr": 0.2814118119354702,
+      "mrr": 0.37316122573567057,
+      "seed": 2
+    }
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "significance_test_scope": "overall seed-level MRR only; no tests for H@1/H@3/H@10",
+  "significance_tests": [
+    {
+      "comparison": "MMA-HNS vs DHNS",
+      "degenerate_constant_difference": false,
+      "dhns_mrr": [
+        0.37123700976371765,
+        0.3699337840080261,
+        0.3713423013687134
+      ],
+      "metric": "overall seed-level MRR",
+      "missing_rate": 0.3,
+      "mma_hns_minus_dhns": [
+        0.00447474715778462,
+        0.004217086139580994,
+        0.0018189243669571864
+      ],
+      "mma_hns_mrr": [
+        0.37571175692150227,
+        0.3741508701476071,
+        0.37316122573567057
+      ],
+      "p_value": 0.053610868112017956,
+      "paired_seed_count": 3,
+      "paired_seeds": [
+        0,
+        1,
+        2
+      ],
+      "t_statistic": 4.143272398225892,
+      "test": "two-sided paired t-test"
+    }
+  ],
+  "table_rows": [
+    {
+      "dataset": "MKG-Y",
+      "hit10_mean": 0.4467392563819885,
+      "hit10_std": 0.0002867999362768908,
+      "hit1_mean": 0.322944055000941,
+      "hit1_std": 0.0012312053575719937,
+      "hit3_mean": 0.39904868602752686,
+      "hit3_std": 0.00217616998926032,
+      "method": "DHNS",
+      "missing_rate": 0.3,
+      "missing_text_mrr_mean": 0.35246824152445966,
+      "missing_text_mrr_std": 0.06221451494715696,
+      "mrr_mean": 0.3708376983801524,
+      "mrr_std": 0.000784581082248963,
+      "paired_mrr_p_value": null,
+      "seed_count": 3
+    },
+    {
+      "dataset": "MKG-Y",
+      "hit10_mean": 0.45255976968331457,
+      "hit10_std": 0.00010840222853729611,
+      "hit1_mean": 0.326323695080736,
+      "hit1_std": 0.0025812480444738165,
+      "hit3_mean": 0.4019276505194643,
+      "hit3_std": 0.0008466484703009493,
+      "method": "MMA-HNS",
+      "missing_rate": 0.3,
+      "missing_text_mrr_mean": 0.35443792166120586,
+      "missing_text_mrr_std": 0.06347494615697381,
+      "mrr_mean": 0.37434128426825997,
+      "mrr_std": 0.0012858831538996945,
+      "paired_mrr_p_value": 0.053610868112017956,
+      "seed_count": 3
+    }
+  ]
+}

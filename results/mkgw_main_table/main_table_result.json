@@ -1,0 +1,457 @@
+{
+  "dataset": "MKG-W",
+  "methods": [
+    "DHNS",
+    "MMA-HNS"
+  ],
+  "missing_rates": [
+    0.1,
+    0.3,
+    0.5
+  ],
+  "missing_text_metric_definition": "head_or_tail_missing_text MRR",
+  "output_files": {
+    "markdown_table": "/home/student04/my_data/DHNS-main/results/mkgw_main_table/main_table.md",
+    "result_json": "/home/student04/my_data/DHNS-main/results/mkgw_main_table/main_table_result.json",
+    "runs_csv": "/home/student04/my_data/DHNS-main/results/mkgw_main_table/main_table_runs.csv",
+    "summary_csv": "/home/student04/my_data/DHNS-main/results/mkgw_main_table/main_table_summary.csv"
+  },
+  "runs": [
+    {
+      "dataset": "MKG-W",
+      "hit1": 0.2368975281715393,
+      "hit10": 0.4667758345603943,
+      "hit3": 0.3669864237308502,
+      "log_file": "results/mkgw_main_table/inject10/dhns_seed0.log",
+      "mask_checksum_sha256": "5a2925360da74cdfbdd1bc62c886774394746bba67e2c6d3efda3fea989545b8",
+      "method": "DHNS",
+      "missing_rate": 0.1,
+      "missing_text_mrr": 0.29299921296928777,
+      "mrr": 0.32118651270866394,
+      "seed": 0
+    },
+    {
+      "dataset": "MKG-W",
+      "hit1": 0.23537668585777283,
+      "hit10": 0.4626813530921936,
+      "hit3": 0.36488068103790283,
+      "log_file": "results/mkgw_main_table/inject10/dhns_seed1.log",
+      "mask_checksum_sha256": "3b9c72d127bcdda6b84c7bdda708c3f5be00bfd1866cbc65c321473efd5b0877",
+      "method": "DHNS",
+      "missing_rate": 0.1,
+      "missing_text_mrr": 0.2970482511182778,
+      "mrr": 0.3189389109611511,
+      "seed": 1
+    },
+    {
+      "dataset": "MKG-W",
+      "hit1": 0.23631258308887482,
+      "hit10": 0.4645531177520752,
+      "hit3": 0.36581653356552124,
+      "log_file": "results/mkgw_main_table/inject10/dhns_seed2.log",
+      "mask_checksum_sha256": "130865a038f5063992475a9764c5a20c4c0c14d24d29059aa0862935b470ca05",
+      "method": "DHNS",
+      "missing_rate": 0.1,
+      "missing_text_mrr": 0.3180216655469569,
+      "mrr": 0.3204306960105896,
+      "seed": 2
+    },
+    {
+      "dataset": "MKG-W",
+      "hit1": 0.25701918577445015,
+      "hit10": 0.47414599906410854,
+      "hit3": 0.37505849321478707,
+      "log_file": "results/mkgw_main_table/inject10/mma_hns_seed0.log",
+      "mask_checksum_sha256": "5a2925360da74cdfbdd1bc62c886774394746bba67e2c6d3efda3fea989545b8",
+      "method": "MMA-HNS",
+      "missing_rate": 0.1,
+      "missing_text_mrr": 0.30061753335497,
+      "mrr": 0.33567183870950296,
+      "seed": 0
+    },
+    {
+      "dataset": "MKG-W",
+      "hit1": 0.2550304164716893,
+      "hit10": 0.4733270940570894,
+      "hit3": 0.3757604117922321,
+      "log_file": "results/mkgw_main_table/inject10/mma_hns_seed1.log",
+      "mask_checksum_sha256": "3b9c72d127bcdda6b84c7bdda708c3f5be00bfd1866cbc65c321473efd5b0877",
+      "method": "MMA-HNS",
+      "missing_rate": 0.1,
+      "missing_text_mrr": 0.30751857189420456,
+      "mrr": 0.33429618182889664,
+      "seed": 1
+    },
+    {
+      "dataset": "MKG-W",
+      "hit1": 0.25128685072531587,
+      "hit10": 0.47519887693027607,
+      "hit3": 0.3769302760879738,
+      "log_file": "results/mkgw_main_table/inject10/mma_hns_seed2.log",
+      "mask_checksum_sha256": "130865a038f5063992475a9764c5a20c4c0c14d24d29059aa0862935b470ca05",
+      "method": "MMA-HNS",
+      "missing_rate": 0.1,
+      "missing_text_mrr": 0.3195435270228834,
+      "mrr": 0.33298355951004777,
+      "seed": 2
+    },
+    {
+      "dataset": "MKG-W",
+      "hit1": 0.24064108729362488,
+      "hit10": 0.4631492793560028,
+      "hit3": 0.36476370692253113,
+      "log_file": "results/mkgw_main_table/inject30/dhns_seed0.log",
+      "mask_checksum_sha256": "3972575a0ae2e133c908e8549b05423f375f09663a5c7560b1be22a87713cdf0",
+      "method": "DHNS",
+      "missing_rate": 0.3,
+      "missing_text_mrr": 0.30761241888251145,
+      "mrr": 0.3222990334033966,
+      "seed": 0
+    },
+    {
+      "dataset": "MKG-W",
+      "hit1": 0.22859148681163788,
+      "hit10": 0.4624473452568054,
+      "hit3": 0.36195603013038635,
+      "log_file": "results/mkgw_main_table/inject30/dhns_seed1.log",
+      "mask_checksum_sha256": "a20cca0621e9d8082a8592b4ada816b42dedf7b068283ead792d9a26daff3c42",
+      "method": "DHNS",
+      "missing_rate": 0.3,
+      "missing_text_mrr": 0.30250653048235393,
+      "mrr": 0.3148326277732849,
+      "seed": 1
+    },
+    {
+      "dataset": "MKG-W",
+      "hit1": 0.24613943696022034,
+      "hit10": 0.4633832573890686,
+      "hit3": 0.36581656336784363,
+      "log_file": "results/mkgw_main_table/inject30/dhns_seed2.log",
+      "mask_checksum_sha256": "22899c19129fd5245e7dc44dcdd11cfd5bd0d2821b722fba7228d08366503c5c",
+      "method": "DHNS",
+      "missing_rate": 0.3,
+      "missing_text_mrr": 0.33664511718973855,
+      "mrr": 0.32545045018196106,
+      "seed": 2
+    },
+    {
+      "dataset": "MKG-W",
+      "hit1": 0.2653252222742162,
+      "hit10": 0.47683668694431447,
+      "hit3": 0.3811417875526439,
+      "log_file": "results/mkgw_main_table/inject30/mma_hns_seed0.log",
+      "mask_checksum_sha256": "3972575a0ae2e133c908e8549b05423f375f09663a5c7560b1be22a87713cdf0",
+      "method": "MMA-HNS",
+      "missing_rate": 0.3,
+      "missing_text_mrr": 0.31805851494425996,
+      "mrr": 0.34181392703688457,
+      "seed": 0
+    },
+    {
+      "dataset": "MKG-W",
+      "hit1": 0.23525970987365466,
+      "hit10": 0.4681796911558259,
+      "hit3": 0.370145063172672,
+      "log_file": "results/mkgw_main_table/inject30/mma_hns_seed1.log",
+      "mask_checksum_sha256": "a20cca0621e9d8082a8592b4ada816b42dedf7b068283ead792d9a26daff3c42",
+      "method": "MMA-HNS",
+      "missing_rate": 0.3,
+      "missing_text_mrr": 0.2950177576160739,
+      "mrr": 0.3223017586279836,
+      "seed": 1
+    },
+    {
+      "dataset": "MKG-W",
+      "hit1": 0.26824988301357044,
+      "hit10": 0.47566682264857274,
+      "hit3": 0.38511932615816563,
+      "log_file": "results/mkgw_main_table/inject30/mma_hns_seed2.log",
+      "mask_checksum_sha256": "22899c19129fd5245e7dc44dcdd11cfd5bd0d2821b722fba7228d08366503c5c",
+      "method": "MMA-HNS",
+      "missing_rate": 0.3,
+      "missing_text_mrr": 0.3544617582716302,
+      "mrr": 0.34484817835090953,
+      "seed": 2
+    },
+    {
+      "dataset": "MKG-W",
+      "hit1": 0.2504679560661316,
+      "hit10": 0.463617205619812,
+      "hit3": 0.367220401763916,
+      "log_file": "results/mkgw_main_table/inject50/dhns_seed0.log",
+      "mask_checksum_sha256": "f9b5e576c0c4e49667779746b402f6fceeba130725956b24c379c7d3401fdd5f",
+      "method": "DHNS",
+      "missing_rate": 0.5,
+      "missing_text_mrr": 0.31943472414514107,
+      "mrr": 0.3279809355735779,
+      "seed": 0
+    },
+    {
+      "dataset": "MKG-W",
+      "hit1": 0.24496959149837494,
+      "hit10": 0.4650210738182068,
+      "hit3": 0.3680393099784851,
+      "log_file": "results/mkgw_main_table/inject50/dhns_seed1.log",
+      "mask_checksum_sha256": "057764a3c639f65b5d607fcb9b7a2fae7561b008cca6266b592c6d4c91ac7fc0",
+      "method": "DHNS",
+      "missing_rate": 0.5,
+      "missing_text_mrr": 0.3189592648682996,
+      "mrr": 0.32471156120300293,
+      "seed": 1
+    },
+    {
+      "dataset": "MKG-W",
+      "hit1": 0.24450163543224335,
+      "hit10": 0.46057558059692383,
+      "hit3": 0.36523163318634033,
+      "log_file": "results/mkgw_main_table/inject50/dhns_seed2.log",
+      "mask_checksum_sha256": "05954f8b1bccf572915d1f30e16609130ed166c37bc0b369b0a19c3a0ea83e8a",
+      "method": "DHNS",
+      "missing_rate": 0.5,
+      "missing_text_mrr": 0.32984749053698637,
+      "mrr": 0.32420217990875244,
+      "seed": 2
+    },
+    {
+      "dataset": "MKG-W",
+      "hit1": 0.2693027608797379,
+      "hit10": 0.4725081890500702,
+      "hit3": 0.379153018249883,
+      "log_file": "results/mkgw_main_table/inject50/mma_hns_seed0.log",
+      "mask_checksum_sha256": "f9b5e576c0c4e49667779746b402f6fceeba130725956b24c379c7d3401fdd5f",
+      "method": "MMA-HNS",
+      "missing_rate": 0.5,
+      "missing_text_mrr": 0.3293344734294115,
+      "mrr": 0.3432159647186451,
+      "seed": 0
+    },
+    {
+      "dataset": "MKG-W",
+      "hit1": 0.270004679457183,
+      "hit10": 0.479293401965372,
+      "hit3": 0.3820776789892372,
+      "log_file": "results/mkgw_main_table/inject50/mma_hns_seed1.log",
+      "mask_checksum_sha256": "057764a3c639f65b5d607fcb9b7a2fae7561b008cca6266b592c6d4c91ac7fc0",
+      "method": "MMA-HNS",
+      "missing_rate": 0.5,
+      "missing_text_mrr": 0.3305346422692649,
+      "mrr": 0.3451309430670906,
+      "seed": 1
+    },
+    {
+      "dataset": "MKG-W",
+      "hit1": 0.2715255030416472,
+      "hit10": 0.47578380907814694,
+      "hit3": 0.3821946654188114,
+      "log_file": "results/mkgw_main_table/inject50/mma_hns_seed2.log",
+      "mask_checksum_sha256": "05954f8b1bccf572915d1f30e16609130ed166c37bc0b369b0a19c3a0ea83e8a",
+      "method": "MMA-HNS",
+      "missing_rate": 0.5,
+      "missing_text_mrr": 0.34741776952837283,
+      "mrr": 0.345297017933,
+      "seed": 2
+    }
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "significance_test_scope": "overall seed-level MRR only; no tests for H@1/H@3/H@10",
+  "significance_tests": [
+    {
+      "comparison": "MMA-HNS vs DHNS",
+      "degenerate_constant_difference": false,
+      "dhns_mrr": [
+        0.32118651270866394,
+        0.3189389109611511,
+        0.3204306960105896
+      ],
+      "metric": "overall seed-level MRR",
+      "missing_rate": 0.1,
+      "mma_hns_minus_dhns": [
+        0.014485326000839016,
+        0.01535727086774552,
+        0.012552863499458167
+      ],
+      "mma_hns_mrr": [
+        0.33567183870950296,
+        0.33429618182889664,
+        0.33298355951004777
+      ],
+      "p_value": 0.0034205498980582165,
+      "paired_seed_count": 3,
+      "paired_seeds": [
+        0,
+        1,
+        2
+      ],
+      "t_statistic": 17.054369254809817,
+      "test": "two-sided paired t-test"
+    },
+    {
+      "comparison": "MMA-HNS vs DHNS",
+      "degenerate_constant_difference": false,
+      "dhns_mrr": [
+        0.3222990334033966,
+        0.3148326277732849,
+        0.32545045018196106
+      ],
+      "metric": "overall seed-level MRR",
+      "missing_rate": 0.3,
+      "mma_hns_minus_dhns": [
+        0.019514893633487962,
+        0.007469130854698691,
+        0.01939772816894847
+      ],
+      "mma_hns_mrr": [
+        0.34181392703688457,
+        0.3223017586279836,
+        0.34484817835090953
+      ],
+      "p_value": 0.06077334039924668,
+      "paired_seed_count": 3,
+      "paired_seeds": [
+        0,
+        1,
+        2
+      ],
+      "t_statistic": 3.8691411074941304,
+      "test": "two-sided paired t-test"
+    },
+    {
+      "comparison": "MMA-HNS vs DHNS",
+      "degenerate_constant_difference": false,
+      "dhns_mrr": [
+        0.3279809355735779,
+        0.32471156120300293,
+        0.32420217990875244
+      ],
+      "metric": "overall seed-level MRR",
+      "missing_rate": 0.5,
+      "mma_hns_minus_dhns": [
+        0.015235029145067192,
+        0.02041938186408765,
+        0.021094838024247553
+      ],
+      "mma_hns_mrr": [
+        0.3432159647186451,
+        0.3451309430670906,
+        0.345297017933
+      ],
+      "p_value": 0.009439482782709523,
+      "paired_seed_count": 3,
+      "paired_seeds": [
+        0,
+        1,
+        2
+      ],
+      "t_statistic": 10.219607565425065,
+      "test": "two-sided paired t-test"
+    }
+  ],
+  "table_rows": [
+    {
+      "dataset": "MKG-W",
+      "hit10_mean": 0.4646701018015544,
+      "hit10_std": 0.0020497459779772994,
+      "hit1_mean": 0.23619559903939566,
+      "hit1_std": 0.0007671403305198162,
+      "hit3_mean": 0.36589454611142475,
+      "hit3_std": 0.001055036748276614,
+      "method": "DHNS",
+      "missing_rate": 0.1,
+      "missing_text_mrr_mean": 0.3026897098781742,
+      "missing_text_mrr_std": 0.013431318846454848,
+      "mrr_mean": 0.3201853732268016,
+      "mrr_std": 0.0011437070669711735,
+      "paired_mrr_p_value": null,
+      "seed_count": 3
+    },
+    {
+      "dataset": "MKG-W",
+      "hit10_mean": 0.474223990017158,
+      "hit10_std": 0.0009383254886535464,
+      "hit1_mean": 0.2544454843238184,
+      "hit1_std": 0.002910588513014669,
+      "hit3_mean": 0.37591639369833096,
+      "hit3_std": 0.000945590052486532,
+      "method": "MMA-HNS",
+      "missing_rate": 0.1,
+      "missing_text_mrr_mean": 0.309226544090686,
+      "missing_text_mrr_std": 0.009577900910295528,
+      "mrr_mean": 0.33431719334948246,
+      "mrr_std": 0.001344262763210324,
+      "paired_mrr_p_value": 0.0034205498980582165,
+      "seed_count": 3
+    },
+    {
+      "dataset": "MKG-W",
+      "hit10_mean": 0.4629932940006256,
+      "hit10_std": 0.0004870641160550299,
+      "hit1_mean": 0.2384573370218277,
+      "hit1_std": 0.008975478401815944,
+      "hit3_mean": 0.36417876680692035,
+      "hit3_std": 0.0019956315851168854,
+      "method": "DHNS",
+      "missing_rate": 0.3,
+      "missing_text_mrr_mean": 0.315588022184868,
+      "missing_text_mrr_std": 0.018413811708112602,
+      "mrr_mean": 0.3208607037862142,
+      "mrr_std": 0.0054530846537803185,
+      "paired_mrr_p_value": null,
+      "seed_count": 3
+    },
+    {
+      "dataset": "MKG-W",
+      "hit10_mean": 0.4735610669162377,
+      "hit10_std": 0.0046969723677783674,
+      "hit1_mean": 0.25627827172048046,
+      "hit1_std": 0.01826125315228147,
+      "hit3_mean": 0.3788020589611605,
+      "hit3_std": 0.007756473773631604,
+      "method": "MMA-HNS",
+      "missing_rate": 0.3,
+      "missing_text_mrr_mean": 0.322512676943988,
+      "missing_text_mrr_std": 0.029971269122683306,
+      "mrr_mean": 0.33632128800525923,
+      "mrr_std": 0.012235688506552721,
+      "paired_mrr_p_value": 0.06077334039924668,
+      "seed_count": 3
+    },
+    {
+      "dataset": "MKG-W",
+      "hit10_mean": 0.4630712866783142,
+      "hit10_std": 0.002272470706771101,
+      "hit1_mean": 0.24664639433224997,
+      "hit1_std": 0.003317830056581957,
+      "hit3_mean": 0.3668304483095805,
+      "hit3_std": 0.001443887119790967,
+      "method": "DHNS",
+      "missing_rate": 0.5,
+      "missing_text_mrr_mean": 0.32274715985014235,
+      "missing_text_mrr_std": 0.006153660477950318,
+      "mrr_mean": 0.3256315588951111,
+      "mrr_std": 0.0020504988194890127,
+      "paired_mrr_p_value": null,
+      "seed_count": 3
+    },
+    {
+      "dataset": "MKG-W",
+      "hit10_mean": 0.4758618000311964,
+      "hit10_std": 0.0033932787268455894,
+      "hit1_mean": 0.270277647792856,
+      "hit1_std": 0.0011362347749441363,
+      "hit3_mean": 0.3811417875526439,
+      "hit3_std": 0.0017233177190753616,
+      "method": "MMA-HNS",
+      "missing_rate": 0.5,
+      "missing_text_mrr_mean": 0.33576229507568306,
+      "missing_text_mrr_std": 0.010111758741634237,
+      "mrr_mean": 0.34454797523957853,
+      "mrr_std": 0.0011565397685249783,
+      "paired_mrr_p_value": 0.009439482782709523,
+      "seed_count": 3
+    }
+  ]
+}

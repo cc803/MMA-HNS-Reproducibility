@@ -1,0 +1,38 @@
+{
+  "experiment": "cross_rate_generalization",
+  "description": "Soft Token 10% checkpoint evaluated at 50% missing (no soft-text mechanism)",
+  "model": "AdvMixRotatE",
+  "dataset": "MKG-Y",
+  "seed": 0,
+  "mode": "test_only",
+  "training_checkpoint": "checkpoint/revision_mkgy_soft_text10_seed0.ckpt",
+  "training_missing_rate": 0.1,
+  "eval_missing_rate": 0.5,
+  "text_mode": "legacy",
+  "use_soft_missing_text": false,
+  "overall_metrics": {
+    "mrr": 0.35893332958221436,
+    "mr": 1392.408447265625,
+    "hit10": 0.44761547446250916,
+    "hit3": 0.3897859454154968,
+    "hit1": 0.30567029118537903
+  },
+  "counts": {
+    "injected_text_count": 6158,
+    "truly_missing_text_count": 2684,
+    "total_missing_text_count": 8842,
+    "missing_image_count": 756,
+    "available_text_before_injection": 12316
+  },
+  "runtime_cost": {
+    "train_wall_time_sec": 0.0,
+    "eval_wall_time_sec": 48.88,
+    "total_wall_time_sec": 50.43
+  },
+  "gpu_memory_cost": {
+    "max_memory_allocated_mb": 963.60,
+    "max_memory_reserved_mb": 980.0
+  },
+  "mask_file": "masks/MKG-Y_random_text50_seed0.pt",
+  "note": "30% and 50% results are numerically identical in legacy mode"
+}

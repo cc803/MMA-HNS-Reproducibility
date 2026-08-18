@@ -1,0 +1,376 @@
+{
+  "baseline_definitions": [
+    {
+      "alpha_grid": "0.0",
+      "approach": "No group search; use lambda=1.00 and alpha=0.0 for every group.",
+      "calibration_mode": "fixed",
+      "fallback_lambda": 1.0,
+      "key": "fixed",
+      "method": "Fixed parameters",
+      "workload": "very_low"
+    },
+    {
+      "alpha_grid": "0.0,0.1,0.2,0.3",
+      "approach": "Fix lambda=1.00 and run groupwise Pareto-safe search over alpha.",
+      "calibration_mode": "alpha_only",
+      "fallback_lambda": 1.0,
+      "key": "alpha_only",
+      "method": "Alpha-only calibration",
+      "workload": "low"
+    },
+    {
+      "alpha_grid": "0.0",
+      "approach": "Search a global positive T on validation and evaluate score/T.",
+      "calibration_mode": "temperature",
+      "fallback_lambda": 1.0,
+      "key": "temperature",
+      "method": "Temperature scaling",
+      "workload": "low"
+    }
+  ],
+  "dataset": "MKG-Y",
+  "experiment": "mkgy_low_degree30_calibration_baselines",
+  "fallback_lambda": 1.0,
+  "inject_text_missing_rate": 0.3,
+  "output_files": {
+    "per_seed_csv": "/mnt/c/Users/15513/Desktop/实验/实验室4090上的文件/DHNS-main/results/mkgy_text_missing/calibration_baselines_low_degree30_split_same_scale/calibration_baselines_per_seed.csv",
+    "result_json": "/mnt/c/Users/15513/Desktop/实验/实验室4090上的文件/DHNS-main/results/mkgy_text_missing/calibration_baselines_low_degree30_split_same_scale/calibration_baselines_result.json",
+    "summary_csv": "/mnt/c/Users/15513/Desktop/实验/实验室4090上的文件/DHNS-main/results/mkgy_text_missing/calibration_baselines_low_degree30_split_same_scale/calibration_baselines_summary.csv",
+    "summary_markdown": "/mnt/c/Users/15513/Desktop/实验/实验室4090上的文件/DHNS-main/results/mkgy_text_missing/calibration_baselines_low_degree30_split_same_scale/calibration_baselines_summary.md"
+  },
+  "per_seed": [
+    {
+      "approach": "No group search; use lambda=1.00 and alpha=0.0 for every group.",
+      "calibration_mode": "fixed",
+      "fallback_lambda": 1.0,
+      "json_path": "results/mkgy_text_missing/calibration_baselines_low_degree30_split_same_scale/fixed_seed0.json",
+      "log_path": "results/mkgy_text_missing/calibration_baselines_low_degree30_split_same_scale/fixed_seed0.log",
+      "mask_checksum_sha256": "500e660692f0decd75ba57c71d0d5b31ecfc10b05756832f67ea40ff7ae3417f",
+      "method": "Fixed parameters",
+      "method_key": "fixed",
+      "seed": 0,
+      "selected_temperature": null,
+      "test_hit1": 0.3212542245587683,
+      "test_hit10": 0.44329703342095383,
+      "test_hit3": 0.39279008636875706,
+      "test_mrr": 0.36778171312065544,
+      "validation_protocol": "separate_50_50",
+      "workload": "very_low"
+    },
+    {
+      "approach": "Fix lambda=1.00 and run groupwise Pareto-safe search over alpha.",
+      "calibration_mode": "alpha_only",
+      "fallback_lambda": 1.0,
+      "json_path": "results/mkgy_text_missing/calibration_baselines_low_degree30_split_same_scale/alpha_only_seed0.json",
+      "log_path": "results/mkgy_text_missing/calibration_baselines_low_degree30_split_same_scale/alpha_only_seed0.log",
+      "mask_checksum_sha256": "500e660692f0decd75ba57c71d0d5b31ecfc10b05756832f67ea40ff7ae3417f",
+      "method": "Alpha-only calibration",
+      "method_key": "alpha_only",
+      "seed": 0,
+      "selected_temperature": null,
+      "test_hit1": 0.32162974089372887,
+      "test_hit10": 0.4444235824258355,
+      "test_hit3": 0.39354111903867817,
+      "test_mrr": 0.3683678666732489,
+      "validation_protocol": "separate_50_50",
+      "workload": "low"
+    },
+    {
+      "approach": "Search a global positive T on validation and evaluate score/T.",
+      "calibration_mode": "temperature",
+      "fallback_lambda": 1.0,
+      "json_path": "results/mkgy_text_missing/calibration_baselines_low_degree30_split_same_scale/temperature_seed0.json",
+      "log_path": "results/mkgy_text_missing/calibration_baselines_low_degree30_split_same_scale/temperature_seed0.log",
+      "mask_checksum_sha256": "500e660692f0decd75ba57c71d0d5b31ecfc10b05756832f67ea40ff7ae3417f",
+      "method": "Temperature scaling",
+      "method_key": "temperature",
+      "seed": 0,
+      "selected_temperature": 1.0,
+      "test_hit1": 0.3212542245587683,
+      "test_hit10": 0.44329703342095383,
+      "test_hit3": 0.39279008636875706,
+      "test_mrr": 0.36778171312065544,
+      "validation_protocol": "separate_50_50",
+      "workload": "low"
+    },
+    {
+      "approach": "No group search; use lambda=1.00 and alpha=0.0 for every group.",
+      "calibration_mode": "fixed",
+      "fallback_lambda": 1.0,
+      "json_path": "results/mkgy_text_missing/calibration_baselines_low_degree30_split_same_scale/fixed_seed1.json",
+      "log_path": "results/mkgy_text_missing/calibration_baselines_low_degree30_split_same_scale/fixed_seed1.log",
+      "mask_checksum_sha256": "c913edd722b7eb42d8cdbc248b7c16469a13a91c24ebe3ed19e2d6dd8d9b330b",
+      "method": "Fixed parameters",
+      "method_key": "fixed",
+      "seed": 1,
+      "selected_temperature": null,
+      "test_hit1": 0.32200525722868945,
+      "test_hit10": 0.4408561772437101,
+      "test_hit3": 0.3957942170484416,
+      "test_mrr": 0.36812481167032024,
+      "validation_protocol": "separate_50_50",
+      "workload": "very_low"
+    },
+    {
+      "approach": "Fix lambda=1.00 and run groupwise Pareto-safe search over alpha.",
+      "calibration_mode": "alpha_only",
+      "fallback_lambda": 1.0,
+      "json_path": "results/mkgy_text_missing/calibration_baselines_low_degree30_split_same_scale/alpha_only_seed1.json",
+      "log_path": "results/mkgy_text_missing/calibration_baselines_low_degree30_split_same_scale/alpha_only_seed1.log",
+      "mask_checksum_sha256": "c913edd722b7eb42d8cdbc248b7c16469a13a91c24ebe3ed19e2d6dd8d9b330b",
+      "method": "Alpha-only calibration",
+      "method_key": "alpha_only",
+      "seed": 1,
+      "selected_temperature": null,
+      "test_hit1": 0.3227562898986106,
+      "test_hit10": 0.44141945174615094,
+      "test_hit3": 0.3957942170484416,
+      "test_mrr": 0.3686425067760513,
+      "validation_protocol": "separate_50_50",
+      "workload": "low"
+    },
+    {
+      "approach": "Search a global positive T on validation and evaluate score/T.",
+      "calibration_mode": "temperature",
+      "fallback_lambda": 1.0,
+      "json_path": "results/mkgy_text_missing/calibration_baselines_low_degree30_split_same_scale/temperature_seed1.json",
+      "log_path": "results/mkgy_text_missing/calibration_baselines_low_degree30_split_same_scale/temperature_seed1.log",
+      "mask_checksum_sha256": "c913edd722b7eb42d8cdbc248b7c16469a13a91c24ebe3ed19e2d6dd8d9b330b",
+      "method": "Temperature scaling",
+      "method_key": "temperature",
+      "seed": 1,
+      "selected_temperature": 1.0,
+      "test_hit1": 0.32200525722868945,
+      "test_hit10": 0.4408561772437101,
+      "test_hit3": 0.3957942170484416,
+      "test_mrr": 0.36812481167032024,
+      "validation_protocol": "separate_50_50",
+      "workload": "low"
+    },
+    {
+      "approach": "No group search; use lambda=1.00 and alpha=0.0 for every group.",
+      "calibration_mode": "fixed",
+      "fallback_lambda": 1.0,
+      "json_path": "results/mkgy_text_missing/calibration_baselines_low_degree30_split_same_scale/fixed_seed2.json",
+      "log_path": "results/mkgy_text_missing/calibration_baselines_low_degree30_split_same_scale/fixed_seed2.log",
+      "mask_checksum_sha256": "db45462ffcb79e45f0cd6d726e223d8765a516db14262f9e3e4d286981497287",
+      "method": "Fixed parameters",
+      "method_key": "fixed",
+      "seed": 2,
+      "selected_temperature": null,
+      "test_hit1": 0.3233195644010514,
+      "test_hit10": 0.44123169357867065,
+      "test_hit3": 0.39354111903867817,
+      "test_mrr": 0.3681504737164695,
+      "validation_protocol": "separate_50_50",
+      "workload": "very_low"
+    },
+    {
+      "approach": "Fix lambda=1.00 and run groupwise Pareto-safe search over alpha.",
+      "calibration_mode": "alpha_only",
+      "fallback_lambda": 1.0,
+      "json_path": "results/mkgy_text_missing/calibration_baselines_low_degree30_split_same_scale/alpha_only_seed2.json",
+      "log_path": "results/mkgy_text_missing/calibration_baselines_low_degree30_split_same_scale/alpha_only_seed2.log",
+      "mask_checksum_sha256": "db45462ffcb79e45f0cd6d726e223d8765a516db14262f9e3e4d286981497287",
+      "method": "Alpha-only calibration",
+      "method_key": "alpha_only",
+      "seed": 2,
+      "selected_temperature": null,
+      "test_hit1": 0.3231318062335712,
+      "test_hit10": 0.4417949680811115,
+      "test_hit3": 0.3933533608711979,
+      "test_mrr": 0.36834604898477336,
+      "validation_protocol": "separate_50_50",
+      "workload": "low"
+    },
+    {
+      "approach": "Search a global positive T on validation and evaluate score/T.",
+      "calibration_mode": "temperature",
+      "fallback_lambda": 1.0,
+      "json_path": "results/mkgy_text_missing/calibration_baselines_low_degree30_split_same_scale/temperature_seed2.json",
+      "log_path": "results/mkgy_text_missing/calibration_baselines_low_degree30_split_same_scale/temperature_seed2.log",
+      "mask_checksum_sha256": "db45462ffcb79e45f0cd6d726e223d8765a516db14262f9e3e4d286981497287",
+      "method": "Temperature scaling",
+      "method_key": "temperature",
+      "seed": 2,
+      "selected_temperature": 1.0,
+      "test_hit1": 0.3233195644010514,
+      "test_hit10": 0.44123169357867065,
+      "test_hit3": 0.39354111903867817,
+      "test_mrr": 0.3681504737164695,
+      "validation_protocol": "separate_50_50",
+      "workload": "low"
+    }
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "summary": [
+    {
+      "approach": "No group search; use lambda=1.00 and alpha=0.0 for every group.",
+      "fallback_lambda": 1.0,
+      "method": "Fixed parameters",
+      "method_key": "fixed",
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "selected_temperature_values": [],
+      "test_hit1": {
+        "mean": 0.32219301539616974,
+        "std": 0.001045393233726998,
+        "values": [
+          0.3212542245587683,
+          0.32200525722868945,
+          0.3233195644010514
+        ]
+      },
+      "test_hit10": {
+        "mean": 0.4417949680811115,
+        "std": 0.0013143071723620084,
+        "values": [
+          0.44329703342095383,
+          0.4408561772437101,
+          0.44123169357867065
+        ]
+      },
+      "test_hit3": {
+        "mean": 0.3940418074852923,
+        "std": 0.0015633991734630942,
+        "values": [
+          0.39279008636875706,
+          0.3957942170484416,
+          0.39354111903867817
+        ]
+      },
+      "test_mrr": {
+        "mean": 0.36801899950248174,
+        "std": 0.00020589622483983483,
+        "values": [
+          0.36778171312065544,
+          0.36812481167032024,
+          0.3681504737164695
+        ]
+      },
+      "validation_protocol": "separate_50_50",
+      "workload": "very_low"
+    },
+    {
+      "approach": "Fix lambda=1.00 and run groupwise Pareto-safe search over alpha.",
+      "fallback_lambda": 1.0,
+      "method": "Alpha-only calibration",
+      "method_key": "alpha_only",
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "selected_temperature_values": [],
+      "test_hit1": {
+        "mean": 0.32250594567530355,
+        "std": 0.0007816995867315737,
+        "values": [
+          0.32162974089372887,
+          0.3227562898986106,
+          0.3231318062335712
+        ]
+      },
+      "test_hit10": {
+        "mean": 0.4425460007510327,
+        "std": 0.0016368377557419037,
+        "values": [
+          0.4444235824258355,
+          0.44141945174615094,
+          0.4417949680811115
+        ]
+      },
+      "test_hit3": {
+        "mean": 0.39422956565277256,
+        "std": 0.0013582760304300097,
+        "values": [
+          0.39354111903867817,
+          0.3957942170484416,
+          0.3933533608711979
+        ]
+      },
+      "test_mrr": {
+        "mean": 0.36845214081135785,
+        "std": 0.00016522228441665535,
+        "values": [
+          0.3683678666732489,
+          0.3686425067760513,
+          0.36834604898477336
+        ]
+      },
+      "validation_protocol": "separate_50_50",
+      "workload": "low"
+    },
+    {
+      "approach": "Search a global positive T on validation and evaluate score/T.",
+      "fallback_lambda": 1.0,
+      "method": "Temperature scaling",
+      "method_key": "temperature",
+      "seeds": [
+        0,
+        1,
+        2
+      ],
+      "selected_temperature_values": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "test_hit1": {
+        "mean": 0.32219301539616974,
+        "std": 0.001045393233726998,
+        "values": [
+          0.3212542245587683,
+          0.32200525722868945,
+          0.3233195644010514
+        ]
+      },
+      "test_hit10": {
+        "mean": 0.4417949680811115,
+        "std": 0.0013143071723620084,
+        "values": [
+          0.44329703342095383,
+          0.4408561772437101,
+          0.44123169357867065
+        ]
+      },
+      "test_hit3": {
+        "mean": 0.3940418074852923,
+        "std": 0.0015633991734630942,
+        "values": [
+          0.39279008636875706,
+          0.3957942170484416,
+          0.39354111903867817
+        ]
+      },
+      "test_mrr": {
+        "mean": 0.36801899950248174,
+        "std": 0.00020589622483983483,
+        "values": [
+          0.36778171312065544,
+          0.36812481167032024,
+          0.3681504737164695
+        ]
+      },
+      "validation_protocol": "separate_50_50",
+      "workload": "low"
+    }
+  ],
+  "temperature_scaling_note": "For rank metrics, dividing every candidate score in a query by the same positive T does not change candidate ordering; T is still recorded as a validation-searched baseline.",
+  "text_missing_mask_strategy": "low_degree",
+  "validation_protocol": {
+    "calibration_triple_count": 1333,
+    "hyperparameter_selection_triple_count": 1332,
+    "mode": "separate_50_50",
+    "original_validation_triple_count": 2665,
+    "test_split_usage": "unchanged final evaluation only",
+    "validation_split_seed": 2026
+  }
+}

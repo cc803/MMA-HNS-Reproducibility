@@ -1,0 +1,96 @@
+{
+  "dataset": "MKG-Y",
+  "inject_text_missing_rate": 0.3,
+  "mrr_delta_split_minus_original": {
+    "mean": -5.159521916764387e-05,
+    "std": 0.0004134171922585791,
+    "values": [
+      0.00038622534367582784,
+      -0.00043527394695741517,
+      -0.00010573705422134427
+    ]
+  },
+  "original_full_hpsac_mrr": {
+    "mean": 0.2824904103233326,
+    "std": 0.013031262486967515,
+    "values": [
+      0.273351397453489,
+      0.2974123384473024,
+      0.2767074950692064
+    ]
+  },
+  "output_files": {
+    "comparison_markdown": "/mnt/c/Users/15513/Desktop/实验/实验室4090上的文件/DHNS-main/results/mkgy_text_missing/split_calibration_low_degree30/split_calibration_comparison.md",
+    "per_seed_csv": "/mnt/c/Users/15513/Desktop/实验/实验室4090上的文件/DHNS-main/results/mkgy_text_missing/split_calibration_low_degree30/split_calibration_per_seed.csv",
+    "result_json": "/mnt/c/Users/15513/Desktop/实验/实验室4090上的文件/DHNS-main/results/mkgy_text_missing/split_calibration_low_degree30/split_calibration_result.json",
+    "summary_csv": "/mnt/c/Users/15513/Desktop/实验/实验室4090上的文件/DHNS-main/results/mkgy_text_missing/split_calibration_low_degree30/split_calibration_summary.csv"
+  },
+  "per_seed": [
+    {
+      "hpsac_calibration_index_checksum_sha256": "00df99633122679f3703abb0e81b2cdec1ef316795ec82541377af69888eaccf",
+      "hpsac_calibration_triple_count": 1333,
+      "hyperparameter_selection_index_checksum_sha256": "5ddf46e3532aedc62a18aa8fa88010aba9e4eb23c60842a102006880c8bd8d15",
+      "hyperparameter_selection_triple_count": 1332,
+      "mask_checksum_sha256": "500e660692f0decd75ba57c71d0d5b31ecfc10b05756832f67ea40ff7ae3417f",
+      "mrr_delta_split_minus_original": 0.00038622534367582784,
+      "original_full_hpsac_mrr": 0.273351397453489,
+      "original_log": "results/mkgy_text_missing/revision_low_degree30/hpsac_seed0.log",
+      "seed": 0,
+      "split_calibration_full_hpsac_mrr": 0.27373762279716485,
+      "split_calibration_log": "results/mkgy_text_missing/split_calibration_low_degree30/hpsac_split_seed0.log",
+      "validation_split_seed": 2026
+    },
+    {
+      "hpsac_calibration_index_checksum_sha256": "00df99633122679f3703abb0e81b2cdec1ef316795ec82541377af69888eaccf",
+      "hpsac_calibration_triple_count": 1333,
+      "hyperparameter_selection_index_checksum_sha256": "5ddf46e3532aedc62a18aa8fa88010aba9e4eb23c60842a102006880c8bd8d15",
+      "hyperparameter_selection_triple_count": 1332,
+      "mask_checksum_sha256": "c913edd722b7eb42d8cdbc248b7c16469a13a91c24ebe3ed19e2d6dd8d9b330b",
+      "mrr_delta_split_minus_original": -0.00043527394695741517,
+      "original_full_hpsac_mrr": 0.2974123384473024,
+      "original_log": "results/mkgy_text_missing/revision_low_degree30/hpsac_seed1.log",
+      "seed": 1,
+      "split_calibration_full_hpsac_mrr": 0.296977064500345,
+      "split_calibration_log": "results/mkgy_text_missing/split_calibration_low_degree30/hpsac_split_seed1.log",
+      "validation_split_seed": 2026
+    },
+    {
+      "hpsac_calibration_index_checksum_sha256": "00df99633122679f3703abb0e81b2cdec1ef316795ec82541377af69888eaccf",
+      "hpsac_calibration_triple_count": 1333,
+      "hyperparameter_selection_index_checksum_sha256": "5ddf46e3532aedc62a18aa8fa88010aba9e4eb23c60842a102006880c8bd8d15",
+      "hyperparameter_selection_triple_count": 1332,
+      "mask_checksum_sha256": "db45462ffcb79e45f0cd6d726e223d8765a516db14262f9e3e4d286981497287",
+      "mrr_delta_split_minus_original": -0.00010573705422134427,
+      "original_full_hpsac_mrr": 0.2767074950692064,
+      "original_log": "results/mkgy_text_missing/revision_low_degree30/hpsac_seed2.log",
+      "seed": 2,
+      "split_calibration_full_hpsac_mrr": 0.27660175801498504,
+      "split_calibration_log": "results/mkgy_text_missing/split_calibration_low_degree30/hpsac_split_seed2.log",
+      "validation_split_seed": 2026
+    }
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "split_calibration_full_hpsac_mrr": {
+    "mean": 0.28243881510416496,
+    "std": 0.012671674682757459,
+    "values": [
+      0.27373762279716485,
+      0.296977064500345,
+      0.27660175801498504
+    ]
+  },
+  "text_missing_mask_strategy": "low_degree",
+  "validation_protocol": {
+    "base_model_checkpoint_usage": "reuse exact Table 5 A and A+B checkpoints; upstream epoch/learning-rate choices stay frozen",
+    "hpsac_calibration_triple_count": 1333,
+    "hyperparameter_selection_triple_count": 1332,
+    "original_validation_triple_count": 2665,
+    "split_strategy": "fixed-seed random permutation, first 1332 reserved, last 1333 calibrated",
+    "test_split_usage": "unchanged final evaluation only",
+    "validation_split_seed": 2026
+  }
+}

@@ -1,0 +1,3 @@
+setting,validation_usage,mrr_mean,mrr_std
+Original Full HPSAC,full 2665 validation triples for HPSAC calibration,0.2824904103233326,0.013031262486967515
+Full HPSAC with separate calibration split,1332 reserved for hyperparameters; 1333 for HPSAC calibration,0.28243881510416496,0.012671674682757459

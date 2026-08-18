@@ -1,0 +1,59 @@
+{
+  "model": "AdvMixRotatE",
+  "dataset": "MKG-Y",
+  "seed": 0,
+  "method": "retrieval_augmented_missing_text_B_v1",
+  "checkpoint_path": "checkpoint/revision_mkgy_retrieval_text10_seed0.ckpt",
+  "mask_path": "masks/MKG-Y_random_text10_seed0.pt",
+  "text_mode": "soft_token",
+  "inject_text_missing_rate": 0.1,
+  "text_missing_mask_strategy": "random",
+  "use_soft_missing_text": true,
+  "use_retrieval_missing_text": true,
+  "retrieval_topk": 5,
+  "retrieval_pool_size": 512,
+  "retrieval_source": "entity_embedding_knn",
+  "overall_metrics": {
+    "mrr": 0.36896660923957825,
+    "mr": 1298.830810546875,
+    "hit10": 0.4487420320510864,
+    "hit3": 0.396920770406723,
+    "hit1": 0.3201276659965515
+  },
+  "subset_metrics": {
+    "head_or_tail_missing_text": {"count": 2610, "mrr": 0.3392222324206231, "hit10": 0.41455938697318007, "hit1": 0.2934865900383142, "triple_count": 1305},
+    "head_missing_text": {"count": 1646, "mrr": 0.3125392430202806, "hit10": 0.38517618469015796, "hit1": 0.2667071688942892, "triple_count": 823},
+    "tail_missing_text": {"count": 1392, "mrr": 0.3768854057524655, "hit10": 0.4525862068965517, "hit1": 0.33261494252873564, "triple_count": 696},
+    "head_or_tail_injected_missing_text": {"count": 866, "mrr": 0.35779986771279576, "hit10": 0.4376443418013857, "hit1": 0.31062355658198615, "triple_count": 433},
+    "head_and_tail_have_text": {"count": 2716, "mrr": 0.397551225253368, "hit10": 0.48159057437407954, "hit1": 0.34572901325478644, "triple_count": 1358}
+  },
+  "retrieval_stats": {
+    "topk": 5,
+    "pool_size": 512,
+    "available_text_candidates": 11084,
+    "avg_topk_similarity_mean": 0.3107,
+    "avg_topk_similarity_max": 0.4500,
+    "prototype_text_agg_mean_norm": 0.9255,
+    "fallback_ratio": 0.0,
+    "missing_text_token_norm": 0.0922
+  },
+  "counts": {
+    "injected_text_count": 1232,
+    "truly_missing_text_count": 2684,
+    "total_missing_text_count": 3916,
+    "missing_image_count": 756,
+    "available_text_before_injection": 12316
+  },
+  "runtime_cost": {
+    "train_wall_time_sec": 8233.11,
+    "eval_wall_time_sec": 71.96,
+    "total_wall_time_sec": 8305.60
+  },
+  "gpu_memory_cost": {
+    "max_memory_allocated_mb": 10182.97,
+    "max_memory_reserved_mb": 15468.0
+  },
+  "storage_cost": {
+    "checkpoint_size_mb": 147.56
+  }
+}

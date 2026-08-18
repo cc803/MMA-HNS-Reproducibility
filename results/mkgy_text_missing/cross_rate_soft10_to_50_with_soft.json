@@ -1,0 +1,46 @@
+{
+  "experiment": "cross_rate_generalization",
+  "description": "Soft Token 10% checkpoint evaluated at 50% missing WITH soft-missing-text enabled",
+  "model": "AdvMixRotatE",
+  "dataset": "MKG-Y",
+  "seed": 0,
+  "mode": "test_only",
+  "training_checkpoint": "checkpoint/revision_mkgy_soft_text10_seed0.ckpt",
+  "training_missing_rate": 0.1,
+  "eval_missing_rate": 0.5,
+  "text_mode": "soft_token",
+  "use_soft_missing_text": true,
+  "use_retrieval_missing_text": false,
+  "missing_text_token_norm": 0.8209,
+  "overall_metrics": {
+    "mrr": 0.2893403172492981,
+    "mr": 1856.3717041015625,
+    "hit10": 0.3991738557815552,
+    "hit3": 0.3205031752586365,
+    "hit1": 0.2290649712085724
+  },
+  "subset_metrics": {
+    "head_or_tail_missing_text": {"count": 4474, "mrr": 0.2664975091019321, "hit10": 0.38399642378185067, "hit1": 0.20317389360751006, "triple_count": 2237},
+    "head_missing_text": {"count": 3328, "mrr": 0.2624895892450684, "hit10": 0.3753004807692308, "hit1": 0.19921875, "triple_count": 1664},
+    "tail_missing_text": {"count": 3104, "mrr": 0.28618598566152365, "hit10": 0.40496134020618557, "hit1": 0.22229381443298968, "triple_count": 1552},
+    "head_or_tail_injected_missing_text": {"count": 3430, "mrr": 0.24127832495152146, "hit10": 0.3746355685131195, "hit1": 0.17113702623906704, "triple_count": 1715},
+    "head_and_tail_have_text": {"count": 852, "mrr": 0.40929532377565647, "hit10": 0.4788732394366197, "hit1": 0.36502347417840375, "triple_count": 426}
+  },
+  "counts": {
+    "injected_text_count": 6158,
+    "truly_missing_text_count": 2684,
+    "total_missing_text_count": 8842,
+    "missing_image_count": 756
+  },
+  "runtime_cost": {
+    "train_wall_time_sec": 0.0,
+    "eval_wall_time_sec": 31.89,
+    "total_wall_time_sec": 32.54
+  },
+  "gpu_memory_cost": {
+    "max_memory_allocated_mb": 963.62,
+    "max_memory_reserved_mb": 980.0
+  },
+  "mask_file": "masks/MKG-Y_random_text50_seed0.pt",
+  "note": "Severe negative transfer at 50% missing with soft token: MRR drops from 0.3715 (10%) → 0.2893 (50%), worse than legacy mode (0.3589)"
+}

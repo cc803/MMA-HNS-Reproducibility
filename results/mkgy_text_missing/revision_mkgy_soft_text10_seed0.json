@@ -1,0 +1,46 @@
+{
+  "model": "AdvMixRotatE",
+  "dataset": "MKG-Y",
+  "seed": 0,
+  "method": "soft_missing_text_A_baseline",
+  "checkpoint_path": "checkpoint/revision_mkgy_soft_text10_seed0.ckpt",
+  "mask_path": "masks/MKG-Y_random_text10_seed0.pt",
+  "text_mode": "soft_token",
+  "inject_text_missing_rate": 0.1,
+  "text_missing_mask_strategy": "random",
+  "use_soft_missing_text": true,
+  "use_retrieval_missing_text": false,
+  "overall_metrics": {
+    "mrr": 0.3715019226074219,
+    "mr": 1338.7666015625,
+    "hit10": 0.44949305057525635,
+    "hit3": 0.3997371196746826,
+    "hit1": 0.323131799697876
+  },
+  "subset_metrics": {
+    "head_or_tail_missing_text": {"count": 2610, "mrr": 0.3419939921825587, "hit10": 0.41379310344827586, "hit1": 0.29693486590038315, "triple_count": 1305},
+    "head_missing_text": {"count": 1646, "mrr": 0.31852821842066487, "hit10": 0.3888213851761847, "hit1": 0.2764277035236938, "triple_count": 823},
+    "tail_missing_text": {"count": 1392, "mrr": 0.38048714681148516, "hit10": 0.44971264367816094, "hit1": 0.33405172413793105, "triple_count": 696},
+    "head_or_tail_injected_missing_text": {"count": 866, "mrr": 0.3702076412783704, "hit10": 0.44110854503464203, "hit1": 0.3279445727482679, "triple_count": 433},
+    "head_and_tail_have_text": {"count": 2716, "mrr": 0.3998601255167785, "hit10": 0.48379970544919, "hit1": 0.3483063328424153, "triple_count": 1358}
+  },
+  "counts": {
+    "injected_text_count": 1232,
+    "truly_missing_text_count": 2684,
+    "total_missing_text_count": 3916,
+    "missing_image_count": 756,
+    "available_text_before_injection": 12316
+  },
+  "runtime_cost": {
+    "train_wall_time_sec": 10018.57,
+    "eval_wall_time_sec": 64.09,
+    "total_wall_time_sec": 10084.22
+  },
+  "gpu_memory_cost": {
+    "max_memory_allocated_mb": 9210.52,
+    "max_memory_reserved_mb": 11858.0
+  },
+  "storage_cost": {
+    "checkpoint_size_mb": 147.56
+  }
+}
